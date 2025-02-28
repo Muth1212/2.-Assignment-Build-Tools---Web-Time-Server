@@ -12,14 +12,6 @@
 #include <signal.h>
 #include <time.h>
 
-##ifdef _WIN32
-#include <winsock2.h> // For Windows socket functions
-#include <ws2tcpip.h>  // For Windows networking functions
-#else
-#include <arpa/inet.h> // For Unix-like systems (Linux/macOS)
-#endif
-
-
 #define DBG
 #include "../debug/dbg.h"
 
